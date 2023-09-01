@@ -76,6 +76,7 @@ section h2{
 .lista-produtos{
     justify-content: space-between;
     flex-wrap: wrap;
+    display: flex;
 }
 
 .lista-produtos li{
