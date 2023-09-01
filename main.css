@@ -1,0 +1,137 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serifs;
+}
+
+html{
+    overflow: hidden;
+}
+
+.container{
+    max-width: 1024px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+header {
+    background-color: #192a56;
+    padding-top: 6px;
+    color: #fff;
+}
+
+header > .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 16px 0;
+}
+
+nav {
+    padding: 20px 0;
+}
+
+nav li {
+    list-style: none; /*Tirar o ponto antes da palavras em destaque*/
+    display: inline;
+    margin-right: 16px;
+    font-size: 18px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+nav li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.clear {
+    clear: both;
+}
+
+
+div .container{
+    display: flex;
+}
+.container-flex {
+    display: flex;
+}
+
+#sobreLoja img{
+    max-width: 400px;
+    margin-right: 24px;
+}
+
+section {
+    padding: 48px 0;
+}
+
+section h2{
+    margin-bottom: 16px;
+    border-bottom: 4px solid #5e5563;
+    padding: 6px;
+}
+
+.lista-produtos{
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.lista-produtos li{
+    list-style: none;
+    max-width: 24%;
+    margin-bottom: 19px;;
+}
+
+.lista-produtos li img {
+    max-width: 100%;
+}
+
+.lista-produtos li h3{
+    margin: 16px 0;
+}
+
+button{
+    display: block ;
+    width: 100%;
+    padding: 8px 0;
+    border: none;
+    background-color: #119759;
+    color: #fff;
+    font-size: 16px;
+    font-weight: bold;
+    font-style: italic;
+    cursor: pointer;
+    border-radius: 6px;
+    margin: 13px 0;
+}
+
+@media screen and (min-width: 641px) and (max-width: 1023px) {
+    .container {
+        max-width: 90%;
+    }
+
+    .containterLo{
+        
+    }
+
+    .destaque .noticia a {
+        font-size: 1.5em;
+    }
+
+    .lista-produtos {
+        display: grid;
+        grid-template-columns: repeat(2, 20%);
+        column-gap: 1%;
+        row-gap: 5%;
+    }
+    
+    .lista-produtos li img {
+        max-width: 100%;
+    }
+    
+    .lista-produtos li h3{
+        margin: 16px 0;
+    }
+}
